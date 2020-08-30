@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="stylesheet" href="css/styles.css" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Welcome to Kokoa Talk</title>
+		<title>Welclome to Kokoa Clone</title>
 	</head>
 	<body>
-		<div id="status-bar">
+		<div class="status-bar">
 			<div class="status-bar__column">
 				<span>No Service</span>
-				<!----To Do WiFi Icon-->
+				<i class="fas fa-wifi"></i>
 			</div>
 
 			<div class="status-bar__column">
@@ -17,9 +18,28 @@
 			</div>
 			<div class="status-bar__column">
 				<span>140%</span>
-				<!----Battery Icon-->
-				<!----lightning Icn-->
+				<i class="fas fa-battery-full fa-lg"></i>
+				<i class="fas fa-bolt"></i>
 			</div>
 		</div>
+
+		<header class="welcome-header">
+			<h1 class="welcome-heahder__title">Welclome to Kokoa Clone</h1>
+			<p class="welcome-heahder__text">
+				If you have a Kokoa Account, logi in with your ID
+			</p>
+		</header>
+
+		<form id="login=form">
+			<input type="text" placeholder="Email or phone number" />
+			<input type="password" placeholder="Password" />
+			<input type="submit" value="Log IN" />
+			<a href="#">Find Kokoatalk ID or Password</a>
+		</form>
+
+		<script
+			src="https://kit.fontawesome.com/6478f529f2.js"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
